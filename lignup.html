@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/lignup.css">
+</head>
+
+<body>
+    <article>
+        <div>
+            <h2>用户注册</h2><a href="login.html">登录</a>
+        </div>
+        <form action="" autocomplete="off">
+            <section>
+                <input type="text" name="uname" value="" placeholder="用户名" required>
+                <span></span>
+            </section>
+            <section>
+                <input type="text" name="phone" value="" placeholder="手机号" maxlength="11">
+                <span></span>
+            </section>
+            <section class="code">
+                <input type="text" name="code" value="" placeholder="验证码" maxlength="4">
+                <span></span>
+                <a href="javascript:">获取验证码</a>
+            </section>
+            <section>
+                <input type="" name="password" value="" placeholder="密码">
+                <span></span>
+            </section>
+            <section>
+                <input type="text" name="confirm_password" value="" placeholder="确认密码">
+                <span></span>
+            </section>
+            <section>
+                <input type="checkbox" name="right" value="right">
+                <span>已阅读并同意</span><a href="javascipt:">《用户协议》</a>
+            </section>
+            <button>注册</button>
+        </form>
+    </article>
+
+    <script src="scripts/signup.js">
+
+    </script>
+</body>
+
+</html>
