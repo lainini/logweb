@@ -49,7 +49,7 @@ submit.addEventListener('click', function () {
     }
     if (fname() && fpassword()) {
         if (!JSON.parse(localStorage.getItem('lignupData'))) {
-            return alert('账号或密码错误');
+            return alert('账号或密码错误1');
         }
 
         const arr = JSON.parse(localStorage.getItem('lignupData'));
@@ -60,10 +60,10 @@ submit.addEventListener('click', function () {
                     location.href = 'index.html';
                     return alert('登录成功');
                 } else {
-                    return alert('账号或密码错误')
+                    return alert('账号或密码错误2')
                 }
             }
-            return alert('账号或密码错误');
+            return alert('账号或密码错误3');
         };
 
     };
