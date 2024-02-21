@@ -23,7 +23,7 @@ function fname() {
         uname.nextElementSibling.innerHTML = '';
         return true;
     };
-    uname.nextElementSibling.innerHTML = '格式错误';
+    uname.nextElementSibling.innerHTML = '必须字母开头并且不低于5位';
 };
 
 // phone输入框检查
@@ -41,11 +41,11 @@ function fphone() {
 const code = document.querySelector('[name="code"]');
 code.addEventListener('change', fcode);
 function fcode() {
-    if (/(?=.*[0-9])(?=.*[a-z])[0-9a-z]{4}/.test(code.value)) {
+    if (/[0-9]{4}$/.test(code.value)) {
         code.nextElementSibling.innerHTML = '';
         return true;
     };
-    code.nextElementSibling.innerHTML = '格式错误';
+    code.nextElementSibling.innerHTML = '必须4位数字';
 }
 // 获取验证码记时
 const getcode = code.nextElementSibling.nextElementSibling;
@@ -70,11 +70,11 @@ getcode.addEventListener('click', function () {
 const password = document.querySelector('[name="password"]');
 password.addEventListener('change', fpassword);
 function fpassword() {
-    if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])[a-zA-Z\d._]{8,18}$/.test(password.value)) {
+    if (/^(?=.*[a-z])(?=.*[\d])[a-zA-Z\d._]{8,18}$/.test(password.value)) {
         password.nextElementSibling.innerHTML = '';
         return true;
     };
-    password.nextElementSibling.innerHTML = '格式错误';
+    password.nextElementSibling.innerHTML = '必须包含字母和数字8位以上';
 };
 const conpass = document.querySelector('[name="confirm_password"]');
 conpass.addEventListener('change', fconpass);
