@@ -61,10 +61,10 @@ submit.addEventListener('click', function () {
                     return alert('登录成功');
                 } else {
                     return alert('账号或密码错误2')
-                }
-            }
-            return alert('账号或密码错误3');
+                };
+            };
         };
+        return alert('账号或密码错误3');
 
     };
 });
