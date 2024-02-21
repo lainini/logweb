@@ -1,0 +1,87 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  width: 800px;
+  margin: 100px auto 0 auto;
+  background: rgb(235, 235, 235);
+  border-radius: 10px;
+  padding: 10px 10px 50px 10px;
+  text-align: center;
+}
+article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 50px;
+  padding: 20px 20px 40px 20px;
+}
+article div a {
+  font-size: 17px;
+}
+article section:not(:last-of-type) {
+  width: 300px;
+  height: 50px;
+  border: solid 1px gray;
+  border-radius: 2px;
+  margin: 0 auto 20px auto;
+  text-align: right;
+  background: white;
+  position: relative;
+}
+article section:not(:last-of-type) input {
+  width: calc(100% - 30px);
+  height: 100%;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+article section:not(:last-of-type):focus-within {
+  border: solid 1px blue;
+}
+article section:not(:last-of-type) span {
+  color: red;
+  position: absolute;
+  right: -5px;
+  translate: 100% 50%;
+}
+article section:last-of-type {
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+article section:last-of-type input {
+  width: 16px;
+  height: 16px;
+}
+article button {
+  width: 300px;
+  height: 40px;
+  margin-top: 5px;
+  background-color: rgb(0, 140, 255);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+}
+article section.code a {
+  color: blue;
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+  translate: 0 56%;
+}

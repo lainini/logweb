@@ -1,0 +1,81 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  width: 800px;
+  margin: 100px auto 0 auto;
+  background: rgb(235, 235, 235);
+  border-radius: 10px;
+  padding: 40px;
+}
+article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+article div span {
+  display: block;
+  width: 60px;
+  margin-left: auto;
+}
+article nav {
+  width: 240px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 20px;
+}
+article nav a {
+  text-decoration: none;
+  font-weight: 500;
+  height: 33px;
+  color: black;
+}
+article nav .underline {
+  border-bottom: solid 2px rgb(0, 85, 255);
+}
+article .minbox {
+  width: 100%;
+  height: 435px;
+  padding-top: 50px;
+  display: block;
+}
+article .minbox .pass section:not(:last-of-type) {
+  width: 40%;
+  height: 70px;
+  margin: 0 auto 10px auto;
+}
+article .minbox .pass section:not(:last-of-type) input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: solid 1px gray;
+  border-radius: 2px;
+  padding-left: 5px;
+}
+article .minbox .pass section:not(:last-of-type) span {
+  color: red;
+}
+article .minbox .pass section:last-of-type {
+  width: 40%;
+  height: 50px;
+  margin: 0 auto 10px auto;
+  text-align: center;
+}
+article .minbox .pass section:last-of-type button {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: rgb(0, 128, 255);
+  border: none;
+  color: white;
+}
